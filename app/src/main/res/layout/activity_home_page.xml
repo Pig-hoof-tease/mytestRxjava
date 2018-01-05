@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/toolbar_layout"/>
+        </android.support.design.widget.AppBarLayout>
+
+
+    //目前不知道啥怎么解决底部滑动的问题，所以先首页暂时弃之
+    <!--<android.support.v4.widget.NestedScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:overScrollMode="never"-->
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+    <!--&gt;-->
+        <!--</android.support.v4.widget.NestedScrollView>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                >
+                <FrameLayout
+                    android:id="@+id/fm_home_page_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/main_tab_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/bottom_sheet_behavior"
+            >
+            <!--app:layout_scrollFlags="scroll|enterAlways"-->
+            <!--app:layout_behavior="com.mytestrxjava.behavior.MyBottomBarBehavior"-->
+            <include layout="@layout/layout_home_page_bttom" />
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+</LinearLayout>

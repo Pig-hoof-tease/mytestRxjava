@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">mytestRxjava</string>
+    //首页
+    <string name="main_tab_1">首页</string>
+    <string name="main_tab_2">导航</string>
+    <string name="main_tab_3">我的</string>
+    <string-array name="sections">
+        <item>@string/home_tab_1_1</item>
+        <item>@string/home_tab_1_2</item>
+        <item>@string/home_tab_1_3</item>
+    </string-array>
+
+    <!--首页tab1的子页面-->
+    <string name="home_tab_1_1">美剧</string>
+    <string name="home_tab_1_2">资讯</string>
+    <string name="home_tab_1_3">阅读</string>
+    <string name="home_tab_1_4">子页4</string>
+
+    <!--视频详情页-->
+    <string name="video_introduction_Title">视频简介</string>
+
+
+</resources>

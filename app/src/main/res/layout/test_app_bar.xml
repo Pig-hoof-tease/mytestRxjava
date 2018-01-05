@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/wirte"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    >
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@mipmap/calendarview"
+                    app:layout_collapseMode="parallax"
+                    />
+                
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/colorPrimary"
+                    android:contentInsetStart="0dp"
+                    app:contentInsetStart="0dp"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:layout_collapseMode="pin"
+                    >
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaaaa
+作者：huachao1001
+链接：http://www.jianshu.com/p/d159f0176576
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。上一篇文章[《CoordinateLayout的使用如此简单 》]上一篇文章《CoordinateLayout的使用如此简单 》对CoordinateLayout的使用做了讲解，今天我们再讲解常常与其一起使用的几个View：AppBarLayout、CollapsingToolbarLayout以及Toolbar。一下子出现3个陌生的View，是不是觉得很慌张~，很多人都写了这几个布局的使用，但是他们却没有有针对性的单独讲解每个View的作用以及如何使用，我看的很多文章都是一上来就把AppBarLayout、CollapsingToolbarLayout以及Toolbar写到一个布局里面去，然后一个一个布局属性去说，一下子感觉好混乱，本文是从Toolbar开始说起，最终让你把这3个View彻底掌握下来！
+
+作者：huachao1001
+链接：http://www.jianshu.com/p/d159f0176576
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。上一篇文章[《CoordinateLayout的使用如此简单 》]上一篇文章《CoordinateLayout的使用如此简单 》对CoordinateLayout的使用做了讲解，今天我们再讲解常常与其一起使用的几个View：AppBarLayout、CollapsingToolbarLayout以及Toolbar。一下子出现3个陌生的View，是不是觉得很慌张~，很多人都写了这几个布局的使用，但是他们却没有有针对性的单独讲解每个View的作用以及如何使用，我看的很多文章都是一上来就把AppBarLayout、CollapsingToolbarLayout以及Toolbar写到一个布局里面去，然后一个一个布局属性去说，一下子感觉好混乱，本文是从Toolbar开始说起，最终让你把这3个View彻底掌握下来！
+
+作者：huachao1001
+链接：http://www.jianshu.com/p/d159f0176576
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。上一篇文章[《CoordinateLayout的使用如此简单 》]上一篇文章《CoordinateLayout的使用如此简单 》对CoordinateLayout的使用做了讲解，今天我们再讲解常常与其一起使用的几个View：AppBarLayout、CollapsingToolbarLayout以及Toolbar。一下子出现3个陌生的View，是不是觉得很慌张~，很多人都写了这几个布局的使用，但是他们却没有有针对性的单独讲解每个View的作用以及如何使用，我看的很多文章都是一上来就把AppBarLayout、CollapsingToolbarLayout以及Toolbar写到一个布局里面去，然后一个一个布局属性去说，一下子感觉好混乱，本文是从Toolbar开始说起，最终让你把这3个View彻底掌握下来！
+
+作者：huachao1001
+链接：http://www.jianshu.com/p/d159f0176576
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。上一篇文章[《CoordinateLayout的使用如此简单 》]上一篇文章《CoordinateLayout的使用如此简单 》对CoordinateLayout的使用做了讲解，今天我们再讲解常常与其一起使用的几个View：AppBarLayout、CollapsingToolbarLayout以及Toolbar。一下子出现3个陌生的View，是不是觉得很慌张~，很多人都写了这几个布局的使用，但是他们却没有有针对性的单独讲解每个View的作用以及如何使用，我看的很多文章都是一上来就把AppBarLayout、CollapsingToolbarLayout以及Toolbar写到一个布局里面去，然后一个一个布局属性去说，一下子感觉好混乱，本文是从Toolbar开始说起，最终让你把这3个View彻底掌握下来！
+
+作者：huachao1001
+链接：http://www.jianshu.com/p/d159f0176576
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。上一篇文章[《CoordinateLayout的使用如此简单 》]上一篇文章《CoordinateLayout的使用如此简单 》对CoordinateLayout的使用做了讲解，今天我们再讲解常常与其一起使用的几个View：AppBarLayout、CollapsingToolbarLayout以及Toolbar。一下子出现3个陌生的View，是不是觉得很慌张~，很多人都写了这几个布局的使用，但是他们却没有有针对性的单独讲解每个View的作用以及如何使用，我看的很多文章都是一上来就把AppBarLayout、CollapsingToolbarLayout以及Toolbar写到一个布局里面去，然后一个一个布局属性去说，一下子感觉好混乱，本文是从Toolbar开始说起，最终让你把这3个View彻底掌握下来！
+
+作者：huachao1001
+链接：http://www.jianshu.com/p/d159f0176576
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。上一篇文章[《CoordinateLayout的使用如此简单 》]上一篇文章《CoordinateLayout的使用如此简单 》对CoordinateLayout的使用做了讲解，今天我们再讲解常常与其一起使用的几个View：AppBarLayout、CollapsingToolbarLayout以及Toolbar。一下子出现3个陌生的View，是不是觉得很慌张~，很多人都写了这几个布局的使用，但是他们却没有有针对性的单独讲解每个View的作用以及如何使用，我看的很多文章都是一上来就把AppBarLayout、CollapsingToolbarLayout以及Toolbar写到一个布局里面去，然后一个一个布局属性去说，一下子感觉好混乱，本文是从Toolbar开始说起，最终让你把这3个View彻底掌握下来！
+
+作者：huachao1001
+链接：http://www.jianshu.com/p/d159f0176576
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。上一篇文章[《CoordinateLayout的使用如此简单 》]上一篇文章《CoordinateLayout的使用如此简单 》对CoordinateLayout的使用做了讲解，今天我们再讲解常常与其一起使用的几个View：AppBarLayout、CollapsingToolbarLayout以及Toolbar。一下子出现3个陌生的View，是不是觉得很慌张~，很多人都写了这几个布局的使用，但是他们却没有有针对性的单独讲解每个View的作用以及如何使用，我看的很多文章都是一上来就把AppBarLayout、CollapsingToolbarLayout以及Toolbar写到一个布局里面去，然后一个一个布局属性去说，一下子感觉好混乱，本文是从Toolbar开始说起，最终让你把这3个View彻底掌握下来！
+
+作者：huachao1001
+链接：http://www.jianshu.com/p/d159f0176576
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。上一篇文章[《CoordinateLayout的使用如此简单 》]上一篇文章《CoordinateLayout的使用如此简单 》对CoordinateLayout的使用做了讲解，今天我们再讲解常常与其一起使用的几个View：AppBarLayout、CollapsingToolbarLayout以及Toolbar。一下子出现3个陌生的View，是不是觉得很慌张~，很多人都写了这几个布局的使用，但是他们却没有有针对性的单独讲解每个View的作用以及如何使用，我看的很多文章都是一上来就把AppBarLayout、CollapsingToolbarLayout以及Toolbar写到一个布局里面去，然后一个一个布局属性去说，一下子感觉好混乱，本文是从Toolbar开始说起，最终让你把这3个View彻底掌握下来！
+
+作者：huachao1001
+链接：http://www.jianshu.com/p/d159f0176576
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。上一篇文章[《CoordinateLayout的使用如此简单 》]上一篇文章《CoordinateLayout的使用如此简单 》对CoordinateLayout的使用做了讲解，今天我们再讲解常常与其一起使用的几个View：AppBarLayout、CollapsingToolbarLayout以及Toolbar。一下子出现3个陌生的View，是不是觉得很慌张~，很多人都写了这几个布局的使用，但是他们却没有有针对性的单独讲解每个View的作用以及如何使用，我看的很多文章都是一上来就把AppBarLayout、CollapsingToolbarLayout以及Toolbar写到一个布局里面去，然后一个一个布局属性去说，一下子感觉好混乱，本文是从Toolbar开始说起，最终让你把这3个View彻底掌握下来！
+
+作者：huachao1001
+链接：http://www.jianshu.com/p/d159f0176576
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。上一篇文章[《CoordinateLayout的使用如此简单 》]上一篇文章《CoordinateLayout的使用如此简单 》对CoordinateLayout的使用做了讲解，今天我们再讲解常常与其一起使用的几个View：AppBarLayout、CollapsingToolbarLayout以及Toolbar。一下子出现3个陌生的View，是不是觉得很慌张~，很多人都写了这几个布局的使用，但是他们却没有有针对性的单独讲解每个View的作用以及如何使用，我看的很多文章都是一上来就把AppBarLayout、CollapsingToolbarLayout以及Toolbar写到一个布局里面去，然后一个一个布局属性去说，一下子感觉好混乱，本文是从Toolbar开始说起，最终让你把这3个View彻底掌握下来！
+
+作者：huachao1001
+链接：http://www.jianshu.com/p/d159f0176576
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。上一篇文章[《CoordinateLayout的使用如此简单 》]上一篇文章《CoordinateLayout的使用如此简单 》对CoordinateLayout的使用做了讲解，今天我们再讲解常常与其一起使用的几个View：AppBarLayout、CollapsingToolbarLayout以及Toolbar。一下子出现3个陌生的View，是不是觉得很慌张~，很多人都写了这几个布局的使用，但是他们却没有有针对性的单独讲解每个View的作用以及如何使用，我看的很多文章都是一上来就把AppBarLayout、CollapsingToolbarLayout以及Toolbar写到一个布局里面去，然后一个一个布局属性去说，一下子感觉好混乱，本文是从Toolbar开始说起，最终让你把这3个View彻底掌握下来！
+
+作者：huachao1001
+链接：http://www.jianshu.com/p/d159f0176576
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。上一篇文章[《CoordinateLayout的使用如此简单 》]上一篇文章《CoordinateLayout的使用如此简单 》对CoordinateLayout的使用做了讲解，今天我们再讲解常常与其一起使用的几个View：AppBarLayout、CollapsingToolbarLayout以及Toolbar。一下子出现3个陌生的View，是不是觉得很慌张~，很多人都写了这几个布局的使用，但是他们却没有有针对性的单独讲解每个View的作用以及如何使用，我看的很多文章都是一上来就把AppBarLayout、CollapsingToolbarLayout以及Toolbar写到一个布局里面去，然后一个一个布局属性去说，一下子感觉好混乱，本文是从Toolbar开始说起，最终让你把这3个View彻底掌握下来！
+
+作者：huachao1001
+链接：http://www.jianshu.com/p/d159f0176576
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。上一篇文章[《CoordinateLayout的使用如此简单 》]上一篇文章《CoordinateLayout的使用如此简单 》对CoordinateLayout的使用做了讲解，今天我们再讲解常常与其一起使用的几个View：AppBarLayout、CollapsingToolbarLayout以及Toolbar。一下子出现3个陌生的View，是不是觉得很慌张~，很多人都写了这几个布局的使用，但是他们却没有有针对性的单独讲解每个View的作用以及如何使用，我看的很多文章都是一上来就把AppBarLayout、CollapsingToolbarLayout以及Toolbar写到一个布局里面去，然后一个一个布局属性去说，一下子感觉好混乱，本文是从Toolbar开始说起，最终让你把这3个View彻底掌握下来！
+
+作者：huachao1001
+链接：http://www.jianshu.com/p/d159f0176576
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。上一篇文章[《CoordinateLayout的使用如此简单 》]上一篇文章《CoordinateLayout的使用如此简单 》对CoordinateLayout的使用做了讲解，今天我们再讲解常常与其一起使用的几个View：AppBarLayout、CollapsingToolbarLayout以及Toolbar。一下子出现3个陌生的View，是不是觉得很慌张~，很多人都写了这几个布局的使用，但是他们却没有有针对性的单独讲解每个View的作用以及如何使用，我看的很多文章都是一上来就把AppBarLayout、CollapsingToolbarLayout以及Toolbar写到一个布局里面去，然后一个一个布局属性去说，一下子感觉好混乱，本文是从Toolbar开始说起，最终让你把这3个View彻底掌握下来！
+
+作者：huachao1001
+链接：http://www.jianshu.com/p/d159f0176576
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。上一篇文章[《CoordinateLayout的使用如此简单 》]上一篇文章《CoordinateLayout的使用如此简单 》对CoordinateLayout的使用做了讲解，今天我们再讲解常常与其一起使用的几个View：AppBarLayout、CollapsingToolbarLayout以及Toolbar。一下子出现3个陌生的View，是不是觉得很慌张~，很多人都写了这几个布局的使用，但是他们却没有有针对性的单独讲解每个View的作用以及如何使用，我看的很多文章都是一上来就把AppBarLayout、CollapsingToolbarLayout以及Toolbar写到一个布局里面去，然后一个一个布局属性去说，一下子感觉好混乱，本文是从Toolbar开始说起，最终让你把这3个View彻底掌握下来！
+
+作者：huachao1001
+链接：http://www.jianshu.com/p/d159f0176576
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。上一篇文章[《CoordinateLayout的使用如此简单 》]上一篇文章《CoordinateLayout的使用如此简单 》对CoordinateLayout的使用做了讲解，今天我们再讲解常常与其一起使用的几个View：AppBarLayout、CollapsingToolbarLayout以及Toolbar。一下子出现3个陌生的View，是不是觉得很慌张~，很多人都写了这几个布局的使用，但是他们却没有有针对性的单独讲解每个View的作用以及如何使用，我看的很多文章都是一上来就把AppBarLayout、CollapsingToolbarLayout以及Toolbar写到一个布局里面去，然后一个一个布局属性去说，一下子感觉好混乱，本文是从Toolbar开始说起，最终让你把这3个View彻底掌握下来！
+
+作者：huachao1001
+链接：http://www.jianshu.com/p/d159f0176576
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。上一篇文章[《CoordinateLayout的使用如此简单 》]上一篇文章《CoordinateLayout的使用如此简单 》对CoordinateLayout的使用做了讲解，今天我们再讲解常常与其一起使用的几个View：AppBarLayout、CollapsingToolbarLayout以及Toolbar。一下子出现3个陌生的View，是不是觉得很慌张~，很多人都写了这几个布局的使用，但是他们却没有有针对性的单独讲解每个View的作用以及如何使用，我看的很多文章都是一上来就把AppBarLayout、CollapsingToolbarLayout以及Toolbar写到一个布局里面去，然后一个一个布局属性去说，一下子感觉好混乱，本文是从Toolbar开始说起，最终让你把这3个View彻底掌握下来！
+
+作者：huachao1001
+链接：http://www.jianshu.com/p/d159f0176576
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"
+
+                />
+    </android.support.v4.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/tab_buttom_test"
+            android:layout_gravity="bottom"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:layout_behavior="@string/bottom_sheet_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorPrimary"
+                />
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>

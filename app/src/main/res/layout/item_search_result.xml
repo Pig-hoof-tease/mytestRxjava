@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_small_padding"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/tv_search_result_movie_img"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:id="@+id/tv_search_result_movie_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="生活琐逝第一季"
+                style="@style/item_search_title"
+                />
+            <TextView
+                android:id="@+id/tv_search_result_movie_oldname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/item_search_content"
+                android:text="别名：Alice·Sykes.."
+                />
+            <TextView
+                android:id="@+id/tv_search_result_movie_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/item_search_content"
+                android:text="状态：至第8集"
+
+                />
+            <TextView
+                android:id="@+id/tv_search_result_movie_hot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/item_search_content"
+                android:text="热度：0℃"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

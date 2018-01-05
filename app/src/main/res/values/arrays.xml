@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="query_suggestions">
+    <item>推荐搜索</item>
+    <item>守望先锋</item>
+    <item>暴走大事件</item>
+    <item>极限挑战</item>
+    <item>主播真会玩</item>
+    <item>起小点</item>
+    <item>爱来了别错过</item>
+    <item>敖厂长</item>
+    <item>打架吧鬼神</item>
+    </string-array>
+
+</resources>
